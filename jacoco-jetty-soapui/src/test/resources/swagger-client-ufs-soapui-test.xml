@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="f340b5b1-cff1-4d83-88ff-9a94b365450f" activeEnvironment="Default" name="swagger-client-ufs-soapui-test" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+    <con:settings/>
+    <con:interface xsi:type="con:RestService" id="06b1bd2a-b9e3-4fe3-accf-c5ff8914d9da" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://127.0.0.1:8080" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <con:settings/>
+
+        <con:definitionCache type="TEXT" rootPart=""/><con:endpoints>
+        <con:endpoint>http://127.0.0.1:8080</con:endpoint>
+    </con:endpoints>
+        <con:resource name="openConfirmationSession" path="/confirmation/openConfirmationSession" id="f67b1a1f-0a12-4e8b-87d0-f8b179377bb8">
+            <con:settings/>
+            <con:parameters/>
+            <con:method name="OpenConfirmationSession" id="be82dfa1-a87b-4a21-a022-b5e25fadc40c" method="POST">
+                <con:settings/>
+                <con:parameters/>
+                <con:representation type="FAULT">
+                    <con:mediaType>text/html;charset=utf-8</con:mediaType>
+                    <con:status>500</con:status>
+                    <con:params/>
+                    <con:element>html</con:element>
+                </con:representation>
+                <con:representation type="REQUEST">
+                    <con:mediaType>application/json</con:mediaType>
+                    <con:params/>
+                </con:representation>
+                <con:representation type="FAULT">
+                    <con:mediaType>text/plain</con:mediaType>
+                    <con:status>400</con:status>
+                    <con:params/>
+                    <con:element>data</con:element>
+                </con:representation>
+                <con:representation type="RESPONSE">
+                    <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+                    <con:status>200</con:status>
+                    <con:params/>
+                    <con:element xmlns:open="http://127.0.0.1/confirmation/openConfirmationSession">open:Response
+                    </con:element>
+                </con:representation>
+                <con:representation type="RESPONSE">
+                    <con:mediaType xsi:nil="true"/>
+                    <con:status>0</con:status>
+                    <con:params/>
+                    <con:element>data</con:element>
+                </con:representation>
+                <con:representation type="RESPONSE">
+                    <con:mediaType xsi:nil="true"/>
+                    <con:status>0</con:status>
+                    <con:params/>
+                    <con:element>data</con:element>
+                </con:representation>
+                <con:representation type="FAULT">
+                    <con:mediaType>text/html; charset=ISO-8859-1</con:mediaType>
+                    <con:status>404 403 405 503</con:status>
+                    <con:params/>
+                    <con:element>html</con:element>
+                </con:representation>
+                <con:representation type="RESPONSE">
+                    <con:mediaType>application/vnd.sun.wadl+xml</con:mediaType>
+                    <con:status>200</con:status>
+                    <con:params/>
+                    <con:element xmlns:ns="http://wadl.dev.java.net/2009/02">ns:application</con:element>
+                </con:representation>
+                <con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Successful request" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+                <con:settings>
+                    <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+                </con:settings>
+                <con:endpoint>http://127.0.0.1:9099</con:endpoint>
+                <con:request>{"operationId":"123"}</con:request>
+                <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+                <con:credentials>
+                    <con:authType>No Authorization</con:authType>
+                </con:credentials>
+                <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+                <con:jmsPropertyConfig/>
+                <con:parameters/>
+            </con:request>
+            </con:method>
+        </con:resource>
+        <con:resource name="sendSms" path="/confirmation/sendSms" id="f67b1a1f-0a12-4e8b-87d0-f8b179377bb8">
+            <con:settings/>
+            <con:parameters/>
+            <con:method name="sendSms" id="be82dfa1-a87b-4a21-a022-b5e25fadc40c" method="POST">
+                <con:settings/>
+                <con:parameters/>
+                <con:representation type="FAULT">
+                    <con:mediaType>text/html;charset=utf-8</con:mediaType>
+                    <con:status>500</con:status>
+                    <con:params/>
+                    <con:element>html</con:element>
+                </con:representation>
+                <con:representation type="REQUEST">
+                    <con:mediaType>application/json</con:mediaType>
+                    <con:params/>
+                </con:representation>
+                <con:representation type="FAULT">
+                    <con:mediaType>text/plain</con:mediaType>
+                    <con:status>400</con:status>
+                    <con:params/>
+                    <con:element>data</con:element>
+                </con:representation>
+                <con:representation type="RESPONSE">
+                    <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+                    <con:status>200</con:status>
+                    <con:params/>
+                    <con:element xmlns:open="http://127.0.0.1/confirmation/openConfirmationSession">open:Response
+                    </con:element>
+                </con:representation>
+                <con:representation type="RESPONSE">
+                    <con:mediaType xsi:nil="true"/>
+                    <con:status>0</con:status>
+                    <con:params/>
+                    <con:element>data</con:element>
+                </con:representation>
+                <con:representation type="RESPONSE">
+                    <con:mediaType xsi:nil="true"/>
+                    <con:status>0</con:status>
+                    <con:params/>
+                    <con:element>data</con:element>
+                </con:representation>
+                <con:representation type="FAULT">
+                    <con:mediaType>text/html; charset=ISO-8859-1</con:mediaType>
+                    <con:status>404 403 405 503</con:status>
+                    <con:params/>
+                    <con:element>html</con:element>
+                </con:representation>
+                <con:representation type="RESPONSE">
+                    <con:mediaType>application/vnd.sun.wadl+xml</con:mediaType>
+                    <con:status>200</con:status>
+                    <con:params/>
+                    <con:element xmlns:ns="http://wadl.dev.java.net/2009/02">ns:application</con:element>
+                </con:representation>
+                <con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation>
+                <con:request name="Successful request" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+                    <con:settings>
+                        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+                    </con:settings>
+                    <con:endpoint>http://127.0.0.1:9099</con:endpoint>
+                    <con:request>{"smsTemplate":"123","phoneNumber":"321","smsSessionId":"3234"}</con:request>
+                    <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+                    <con:credentials>
+                        <con:authType>No Authorization</con:authType>
+                    </con:credentials>
+                    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+                    <con:jmsPropertyConfig/>
+                    <con:parameters/>
+                </con:request></con:method>
+        </con:resource><con:resource name="checkCode" path="/confirmation/checkCode" id="f67b1a1f-0a12-4e8b-87d0-f8b179377bb8">
+        <con:settings/>
+        <con:parameters/>
+        <con:method name="checkCode" id="be82dfa1-a87b-4a21-a022-b5e25fadc40c" method="POST">
+            <con:settings/>
+            <con:parameters/>
+            <con:representation type="FAULT">
+                <con:mediaType>text/html;charset=utf-8</con:mediaType>
+                <con:status>500</con:status>
+                <con:params/>
+                <con:element>html</con:element>
+            </con:representation>
+            <con:representation type="REQUEST">
+                <con:mediaType>application/json</con:mediaType>
+                <con:params/>
+            </con:representation>
+            <con:representation type="FAULT">
+                <con:mediaType>text/plain</con:mediaType>
+                <con:status>400</con:status>
+                <con:params/>
+                <con:element>data</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE">
+                <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+                <con:status>200</con:status>
+                <con:params/>
+                <con:element xmlns:open="http://127.0.0.1/confirmation/openConfirmationSession">open:Response
+                </con:element>
+            </con:representation>
+            <con:representation type="RESPONSE">
+                <con:mediaType xsi:nil="true"/>
+                <con:status>0</con:status>
+                <con:params/>
+                <con:element>data</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE">
+                <con:mediaType xsi:nil="true"/>
+                <con:status>0</con:status>
+                <con:params/>
+                <con:element>data</con:element>
+            </con:representation>
+            <con:representation type="FAULT">
+                <con:mediaType>text/html; charset=ISO-8859-1</con:mediaType>
+                <con:status>404 403 405 503</con:status>
+                <con:params/>
+                <con:element>html</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE">
+                <con:mediaType>application/vnd.sun.wadl+xml</con:mediaType>
+                <con:status>200</con:status>
+                <con:params/>
+                <con:element xmlns:ns="http://wadl.dev.java.net/2009/02">ns:application</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Successful request" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+            <con:settings>
+                <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>http://127.0.0.1:9099</con:endpoint>
+            <con:request>{"smsCode":"321","operationId":"432","smsSessionId":"3234"}</con:request>
+            <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+            <con:credentials>
+                <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+        </con:request>
+        </con:method>
+    </con:resource><con:resource name="testRequest" path="/confirmation/testRequest" id="f67b1a1f-0a12-4e8b-87d0-f8b179377bb8">
+        <con:settings/>
+        <con:parameters/>
+        <con:method name="testRequest" id="be82dfa1-a87b-4a21-a022-b5e25fadc40c" method="POST">
+            <con:settings/>
+            <con:parameters/>
+            <con:representation type="FAULT">
+                <con:mediaType>text/html;charset=utf-8</con:mediaType>
+                <con:status>500</con:status>
+                <con:params/>
+                <con:element>html</con:element>
+            </con:representation>
+            <con:representation type="REQUEST">
+                <con:mediaType>application/json</con:mediaType>
+                <con:params/>
+            </con:representation>
+            <con:representation type="FAULT">
+                <con:mediaType>text/plain</con:mediaType>
+                <con:status>400</con:status>
+                <con:params/>
+                <con:element>data</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE">
+                <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+                <con:status>200</con:status>
+                <con:params/>
+                <con:element xmlns:open="http://127.0.0.1/confirmation/openConfirmationSession">open:Response
+                </con:element>
+            </con:representation>
+            <con:representation type="RESPONSE">
+                <con:mediaType xsi:nil="true"/>
+                <con:status>0</con:status>
+                <con:params/>
+                <con:element>data</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE">
+                <con:mediaType xsi:nil="true"/>
+                <con:status>0</con:status>
+                <con:params/>
+                <con:element>data</con:element>
+            </con:representation>
+            <con:representation type="FAULT">
+                <con:mediaType>text/html; charset=ISO-8859-1</con:mediaType>
+                <con:status>404 403 405 503</con:status>
+                <con:params/>
+                <con:element>html</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE">
+                <con:mediaType>application/vnd.sun.wadl+xml</con:mediaType>
+                <con:status>200</con:status>
+                <con:params/>
+                <con:element xmlns:ns="http://wadl.dev.java.net/2009/02">ns:application</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Successful request" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+            <con:settings>
+                <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>http://127.0.0.1:9099</con:endpoint>
+            <con:request>{"integer":"432","primitiveInt":"3234","objectLong":"3234","primitiveLong":"3234","bigInteger":"3234","bigDecimal":"3234","primitiveFloat":"3234","objectFloat":"3234","commonResult":"A","primitiveBoolean":true,"objectBoolean":true}</con:request>
+            <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+            <con:credentials>
+                <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+        </con:request>
+        </con:method>
+    </con:resource></con:interface>
+    <con:testSuite id="87a8f812-9844-4532-a9d8-ac59d4d0281d" name="TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="0c794dc5-ee59-4b22-8f54-0dbfc8e9fefc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Prepare" searchProperties="true" disabled="true">
+            <con:settings/>
+            <con:testStep type="groovy" name="Groovy Script to load properties from file" id="e29b04c6-1350-4151-be66-1ea3907ee8ba">
+                <con:settings/>
+                <con:config><script>def path=new com.eviware.soapui.support.GroovyUtils(context).projectPath
+def properties = new Properties()
+new File(path+"/conf/soap-ui.properties").withInputStream {
+	stream -> properties.load(stream)
+}
+properties.each {
+	testRunner.testCase.testSuite.setPropertyValue(it.key, it.value)
+}</script></con:config>
+            </con:testStep>
+            
+            
+            <con:properties/>
+        </con:testCase><con:testCase id="dfe24edc-e44f-4cfd-b976-cbaa5dbef9ab" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="openConfirmationSession TestCase" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="Prepare" id="c9ed8d9b-e490-435a-875f-7e54717896b0"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>0c794dc5-ee59-4b22-8f54-0dbfc8e9fefc</con:targetTestCase><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="restrequest" name="successful request" id="8cd82640-7bf4-48a2-9e45-2ec4c9e9937c"><con:settings/><con:config service="http://127.0.0.1:8080" resourcePath="/confirmation/openConfirmationSession" methodName="OpenConfirmationSession" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="successful request" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+        <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>http://${#TestSuite#ip}:${#TestSuite#port}${#TestSuite#root}</con:endpoint>
+        <con:request>{"operationId":"123"}</con:request>
+        <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+        <con:assertion type="JsonPath Match" id="59de1fa5-3c2d-4fd2-900f-662b98551a5a" name="JsonPath Match"><con:configuration><path>$.resultCode</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Count" id="d7232c1f-febc-455b-bacd-5308a39ebc2a" name="JsonPath Count"><con:configuration><path>smsSessionId</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials>
+        <con:authType>No Authorization</con:authType>
+    </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+    </con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="unsuccessful request - inexistent field" id="c86888c2-2a9c-4a5e-a82e-9fbd7c857bd1"><con:settings/><con:config service="http://127.0.0.1:8080" resourcePath="/confirmation/openConfirmationSession" methodName="OpenConfirmationSession" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="unsuccessful request - inexistent field" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+        <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>http://${#TestSuite#ip}:${#TestSuite#port}${#TestSuite#root}</con:endpoint>
+        <con:request>{"noSuchField":"123"}</con:request>
+        <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="f11bdbe5-c5ab-4737-8c3f-22ee636d71de" name="Valid HTTP Status Codes"><con:configuration><codes>400</codes></con:configuration></con:assertion><con:credentials>
+        <con:authType>No Authorization</con:authType>
+    </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+    </con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="fdf3f216-c6b1-4038-a3c0-185daf095725" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="sendSms TestCase" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="Prepare" id="e340deb8-f1ce-4c6f-baaf-8052747aba47"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>0c794dc5-ee59-4b22-8f54-0dbfc8e9fefc</con:targetTestCase><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="restrequest" name="successful request" id="6d17e35c-5f62-46c7-a164-29ad1bd0730f"><con:settings/><con:config service="http://127.0.0.1:8080" resourcePath="/confirmation/sendSms" methodName="sendSms" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="successful request" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+        <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>http://${#TestSuite#ip}:${#TestSuite#port}${#TestSuite#root}</con:endpoint>
+        <con:request>{"smsTemplate":"321","phoneNumber":"432","smsSessionId":"3234"}</con:request>
+        <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+        <con:assertion type="JsonPath Match" id="59de1fa5-3c2d-4fd2-900f-662b98551a5a" name="JsonPath Match"><con:configuration><path>$.resultCode</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials>
+        <con:authType>No Authorization</con:authType>
+    </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+    </con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="unsuccessful request - inexistent field" id="1912b75e-be6b-44e2-8a97-87c4f8b302d5"><con:settings/><con:config service="http://127.0.0.1:8080" resourcePath="/confirmation/sendSms" methodName="sendSms" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="unsuccessful request - inexistent field" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+        <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>http://${#TestSuite#ip}:${#TestSuite#port}${#TestSuite#root}</con:endpoint>
+        <con:request>{"noSuchField":"321","operationId":"432","smsSessionId":"3234"}</con:request>
+        <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="f11bdbe5-c5ab-4737-8c3f-22ee636d71de" name="Valid HTTP Status Codes"><con:configuration><codes>400</codes></con:configuration></con:assertion><con:credentials>
+        <con:authType>No Authorization</con:authType>
+    </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+    </con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="aaf4d8e2-d0b3-4bc1-ba72-719db9fb1557" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="checkCode TestCase" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="Prepare" id="7ca7e5bd-1807-4c5b-88c4-5e7cd9891bca"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>0c794dc5-ee59-4b22-8f54-0dbfc8e9fefc</con:targetTestCase><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="restrequest" name="successful request" id="eb334b77-9812-48e6-b961-88867bd2a952"><con:settings/><con:config service="http://127.0.0.1:8080" resourcePath="/confirmation/checkCode" methodName="checkCode" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="successful request" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+        <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>http://${#TestSuite#ip}:${#TestSuite#port}${#TestSuite#root}</con:endpoint>
+        <con:request>{"smsCode":"321","operationId":"432","smsSessionId":"3234"}</con:request>
+        <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+        <con:assertion type="JsonPath Match" id="59de1fa5-3c2d-4fd2-900f-662b98551a5a" name="JsonPath Match"><con:configuration><path>$.resultCode</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials>
+        <con:authType>No Authorization</con:authType>
+    </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+    </con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="unsuccessful request - inexistent field" id="a96f218c-279c-4b5f-8215-9b8cbddb1c0e"><con:settings/><con:config service="http://127.0.0.1:8080" resourcePath="/confirmation/checkCode" methodName="checkCode" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="unsuccessful request - inexistent field" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+        <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>http://${#TestSuite#ip}:${#TestSuite#port}${#TestSuite#root}</con:endpoint>
+        <con:request>{"noSuchField":"321","operationId":"432","smsSessionId":"3234"}</con:request>
+        <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="f11bdbe5-c5ab-4737-8c3f-22ee636d71de" name="Valid HTTP Status Codes"><con:configuration><codes>400</codes></con:configuration></con:assertion><con:credentials>
+        <con:authType>No Authorization</con:authType>
+    </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+    </con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="9b9aa9e9-42b8-4f65-b832-ab3f21b26572" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="testRequest TestCase" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="Prepare" id="130e051a-5205-4f12-9fe6-233a90de3a45"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>0c794dc5-ee59-4b22-8f54-0dbfc8e9fefc</con:targetTestCase><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="restrequest" name="successful request" id="763e879a-7309-4630-ae92-ad24a5b42b95"><con:settings/><con:config service="http://127.0.0.1:8080" resourcePath="/confirmation/testRequest" methodName="testRequest" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="successful request" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+        <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>http://${#TestSuite#ip}:${#TestSuite#port}${#TestSuite#root}</con:endpoint>
+        <con:request>{"integer":"432","primitiveInt":"3234","objectLong":"3234","primitiveLong":"3234","bigInteger":"3234","bigDecimal":"3234","primitiveFloat":"3234","objectFloat":"3234","commonResult":"A","primitiveBoolean":true,"objectBoolean":true}</con:request>
+        <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+        <con:assertion type="JsonPath Match" id="59de1fa5-3c2d-4fd2-900f-662b98551a5a" name="JsonPath Match"><con:configuration><path>$.resultCode</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials>
+        <con:authType>No Authorization</con:authType>
+    </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+    </con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="unsuccessful request - inexistent field" id="5ab80b07-a55f-4ff7-8b30-12a5b34446fc"><con:settings/><con:config service="http://127.0.0.1:8080" resourcePath="/confirmation/testRequest" methodName="testRequest" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="unsuccessful request - inexistent field" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+        <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>http://${#TestSuite#ip}:${#TestSuite#port}${#TestSuite#root}</con:endpoint>
+        <con:request>{"noSuchField":"432","primitiveInt":"3234","objectLong":"3234","primitiveLong":"3234","bigInteger":"3234","bigDecimal":"3234","primitiveFloat":"3234","objectFloat":"3234","commonResult":"A","primitiveBoolean":true,"objectBoolean":true}</con:request>
+        <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="f11bdbe5-c5ab-4737-8c3f-22ee636d71de" name="Valid HTTP Status Codes"><con:configuration><codes>400</codes></con:configuration></con:assertion><con:credentials>
+        <con:authType>No Authorization</con:authType>
+    </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+    </con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="0b1ac9b8-045f-4950-a96b-df8abae786e6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="pseudo flow" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="Prepare" id="4f620b23-9852-48fa-aece-8996b87b6d82"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>0c794dc5-ee59-4b22-8f54-0dbfc8e9fefc</con:targetTestCase><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="restrequest" name="openConfirmationSession" id="86c64f46-f031-4d70-8e17-ba32e3a30a9c"><con:settings/><con:config service="http://127.0.0.1:8080" resourcePath="/confirmation/openConfirmationSession" methodName="OpenConfirmationSession" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="openConfirmationSession" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+        <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>http://${#TestSuite#ip}:${#TestSuite#port}${#TestSuite#root}</con:endpoint>
+        <con:request>{"operationId":"123"}</con:request>
+        <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+        <con:assertion type="JsonPath Match" id="59de1fa5-3c2d-4fd2-900f-662b98551a5a" name="JsonPath Match"><con:configuration><path>$.resultCode</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Count" id="d7232c1f-febc-455b-bacd-5308a39ebc2a" name="JsonPath Count"><con:configuration><path>smsSessionId</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials>
+        <con:authType>No Authorization</con:authType>
+    </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+    </con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer (smsSessionId)" id="8b6a85fb-b093-424f-8421-57705133400b"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>sessionId</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>openConfirmationSession</con:sourceStep><con:sourcePath>smsSessionId</con:sourcePath><con:targetType>smsSessionId</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:type>JSONPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="sendSms" id="a3447f6b-910f-4b70-b400-ff47d1e9dc05"><con:settings/><con:config service="http://127.0.0.1:8080" resourcePath="/confirmation/sendSms" methodName="sendSms" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="sendSms" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+        <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>http://${#TestSuite#ip}:${#TestSuite#port}${#TestSuite#root}</con:endpoint>
+        <con:request>{"smsTemplate":"321","phoneNumber":"432","smsSessionId":"${#TestCase#smsSessionId}"}</con:request>
+        <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+        <con:assertion type="JsonPath Match" id="59de1fa5-3c2d-4fd2-900f-662b98551a5a" name="JsonPath Match"><con:configuration><path>$.resultCode</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials>
+        <con:authType>No Authorization</con:authType>
+    </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+    </con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="checkCode" id="d9dab46c-fb74-49a6-a097-535ec7e9ab5d"><con:settings/><con:config service="http://127.0.0.1:8080" resourcePath="/confirmation/checkCode" methodName="checkCode" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="checkCode" id="4efa01cd-aa23-43fd-b6a5-e0643a5209ea" mediaType="application/json" postQueryString="false">
+        <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="UCS_SESSION_ID" value="Cookie_consultant2" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>http://${#TestSuite#ip}:${#TestSuite#port}${#TestSuite#root}</con:endpoint>
+        <con:request>{"smsCode":"321","operationId":"432","smsSessionId":"${#TestCase#smsSessionId}"}</con:request>
+        <con:originalUri>http://127.0.0.1/confirmation/openConfirmationSession</con:originalUri>
+        <con:assertion type="JsonPath Match" id="59de1fa5-3c2d-4fd2-900f-662b98551a5a" name="JsonPath Match"><con:configuration><path>$.resultCode</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials>
+        <con:authType>No Authorization</con:authType>
+    </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+    </con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>smsSessionId</con:name><con:value>b893efbb49844d698e2093f7036afd75</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>root</con:name><con:value>/</con:value></con:property><con:property><con:name>port</con:name><con:value>9099</con:value></con:property><con:property><con:name>ip</con:name><con:value>127.0.0.1</con:value></con:property></con:properties></con:testSuite><con:properties/>
+    <con:wssContainer/>
+    <con:oAuth2ProfileContainer/>
+    <con:sensitiveInformation/>
+</con:soapui-project>
